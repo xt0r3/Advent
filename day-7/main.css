@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand';
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top right, #110047 0%, #a30000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block{
+    padding: 32px;
+    height: fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.username{
+
+}
+
+h2{
+    padding: 0;
+    margin-top: 0;
+}
+
+
+input[type="text"]{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: #ececec;
+    border: 0;
+    transition: border-width 1s;
+}
+
+
+input[type="text"]:focus{
+    border: 3px #605389;
+}
+
+input[type="submit"]{
+    padding: 10px 40px 10px 40px;
+    color: #FFFfff;
+    background-color: #110047;
+    border: 0;
+}
+
+#form1-submit{
+}
+
+
+input[type="submit"]:hover{
+    background-color: #320d83;
+}
+
+
+
+
+
+
