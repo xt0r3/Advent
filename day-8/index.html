@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>8. nap - bg-clip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+      html body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      p{
+        text-align: justify;
+        line-height: 150%;
+      }
+      .image{
+        width: 100%;
+        height: 300px;
+        background-image: url("./8_bg.webp");
+        filter: hue-rotate(160deg);
+        background-size: cover;
+      }
+      .gradient-text{
+        color: rgba(0,0,0,0);
+        background-image: linear-gradient(to right, blue 0%, pink 100%);
+        -webkit-background-clip: text;
+      }
+      .container{
+        display: block;
+        margin: auto;
+        width: 80%;
+        max-width: 600px;
+      }
+      .gradient{
+        display: block;
+        margin: auto;
+        width: 150px;
+        background-image: linear-gradient(to top right, #000bff 0%, #fa5959 100%);
+        padding: 5px;
+        border-radius: 4px;
+      }
+      .hoverfade{
+        color: black;
+        padding: 8px;
+        transition: 0.5s;
+        text-align: center;
+        background-color: white;
+        opacity: 100%;
+      }
+      .gradient:hover .hoverfade{
+        color: white;
+        background-color: rgba(0,0,0,0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image"></div>
+    <div class="container">
+      <h1 class="gradient-text">Invent. Build. Deploy.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestias vero tempora, fugiat officia quisquam animi delectus ipsam voluptas sit?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis maxime sed assumenda ipsum commodi doloribus recusandae dolorem eligendi nemo, nam error cum, saepe amet et perspiciatis, nulla consequuntur distinctio facilis. Ab fuga deserunt facilis aut, natus blanditiis et officiis!</p>
+      <div class="gradient">
+        <div class="hoverfade">
+          Join Us!
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ex debitis dolorem perferendis sint pariatur eveniet alias animi autem blanditiis rerum reprehenderit at minima, minus libero sapiente repellendus a. Repellendus ut, nobis sit! Nisi expedita, non aut beatae libero doloremque.</p>
+    </div>
+  </body>
+</html>
