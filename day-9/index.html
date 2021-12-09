@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9. nap - Achievements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        html, body{
+             width: 100%;
+             height: 100%;
+             margin: 0;
+        }
+        .block{
+            display: grid;
+            margin: auto;
+            grid-template-columns: 1fr auto auto;
+            row-gap: 16px;
+            max-width: 700px;
+            min-width: 500px;
+            width: 100%;
+        }
+        .entry{
+            padding: 32px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .entry:nth-of-type(3n + 1){
+            border-radius: 10px 0 0 10px;
+        }
+        .entry:nth-of-type(3n + 2){
+            text-align: center;
+        }
+        .entry:nth-of-type(3n){
+            color: #999;
+            border-radius: 0 10px 10px 0;
+            text-align: right;
+        }
+        .entry-title{
+            color: white;
+            text-align: center;
+            grid-column: 1 / span 3;
+        }
+        .container{
+            padding: 16px;
+            box-sizing: border-box;
+            background-image: url("./bg_09.jpg");
+            background-size: cover;
+            overflow-x: auto;
+            overflow-y: scroll;
+            height: 100%;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <h1 class="entry-title">Achievements</h1>
+            <div class="entry">National High School competition</div>
+                <div class="entry">2021. 07. 10.</div>
+                <div class="entry">international</div>
+            <div class="entry">IDK competition</div>
+                <div class="entry">2021. 07. 10.</div>
+                <div class="entry">international</div>
+            <div class="entry">Something else competition</div>
+                <div class="entry">2021. 07. 10.</div>
+                <div class="entry">international</div>
+            <h1 class="entry-title">Other stuff</h1>
+            <div class="entry">Muffin eating competition</div>
+                <div class="entry">2021. 07. 10.</div>
+                <div class="entry">international</div>
+        </div>
+    </div>
+</body>
+</html>
