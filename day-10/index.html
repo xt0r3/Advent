@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <title>10. nap - sidebar</title>
     <link href="main.css" media="screen" rel="stylesheet"/>
-    <script src="listCheck.js"></script>
 </head>
 <body>
 <div class="sidebar" id="sidebar">
-    <div class="sidebar-item" id="menu">
+    <div class="sidebar-item" id="menu" onclick="document.getElementById('sidebar').classList.toggle('open')">
         Menu
     </div>
-    <div class="sidebar-item">
+    <a class="sidebar-item">
         Item 1
-    </div>
-    <div class="sidebar-item">
+    </a>
+    <a class="sidebar-item">
         Item 2
-    </div>
-    <div class="sidebar-item">
+    </a>
+    <a class="sidebar-item">
         Item 3
-    </div>
-    <div class="sidebar-item">
+    </a>
+    <a class="sidebar-item">
         Long item 4
-    </div>
+    </a>
 </div>
-<script src="toggleSidebar.js"></script>
-<script>checkWidth()</script>
-
 <div class="container">
     <h1 style="text-align: center">Website content</h1>
     <p style="line-height: 150%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis consectetur

@@ -31,8 +31,6 @@ html, body{
     padding: 0;
 }
 
-
-
 .container{
     display: block;
     margin: auto;
@@ -43,3 +41,36 @@ html, body{
 .sidebar-item:hover{
     background-color: #2a6c63;
 }
+
+@media screen and (max-width: 450px) {
+    .sidebar{
+        flex-direction: column;
+    }
+    #menu{
+        height: auto;
+        width: 100%;
+        padding: 16px;
+    }
+    .sidebar:not(.open) .sidebar-item{
+        height: 0;
+        width: 0;
+        padding: 0;
+    }
+    .sidebar.open .sidebar-item{
+        height: auto;
+        width: 100%;
+        opacity: 100%;
+        padding: 16px;
+        visibility: visible;
+    }
+    .sidebar.open #menu{
+        background-color: #2a6c63;
+    }
+}
+
+
+
+
+
+
+
