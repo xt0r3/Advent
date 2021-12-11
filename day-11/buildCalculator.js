@@ -5,6 +5,7 @@ function addButton(content){
     div.textContent = content;
     div.classList.add('button');
     calculator.appendChild(div);
+    return div;
 }
 
 for(let i = 1; i < 10; i++){
