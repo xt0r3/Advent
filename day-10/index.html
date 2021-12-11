@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>10. nap - sidebar</title>
+    <script>
+        function closeSidebar(){
+            if(window.innerWidth > 450){
+                let sidebar = document.getElementById('sidebar');
+                if(sidebar.classList.contains('open')){
+                    sidebar.classList.remove('open');
+                }
+            }
+        }
+        window.addEventListener('resize', closeSidebar);
+    </script>
     <link href="main.css" media="screen" rel="stylesheet"/>
 </head>
 <body>
