@@ -6,7 +6,7 @@
     <script>
         function closeSidebar(){
             if(window.innerWidth > 450){
-                let sidebar = document.getElementById('sidebar');
+                const sidebar = document.getElementById('sidebar');
                 if(sidebar.classList.contains('open')){
                     sidebar.classList.remove('open');
                 }
