@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13. nap</title>
+    <style>
+        .paid{
+            display: grid;
+            gap: 0;
+        }
+        .grid-item{
+            border: 3px grey;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            background-color: #113694;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container-row{
+            flex: 1 1 0;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = 'sum'>Fizetendő: </h1>
+    <h1>Pénztárca</h1>
+    <div class="container" id = "money-grid"></div>
+    <h1>Beadott címletek</h1>
+    <div class="paid"></div>
+
+    <script src="generator.js"></script>
+</body>
+</html>
